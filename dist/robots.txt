@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /booking/success
+
+Sitemap: https://YOUR_DOMAIN/sitemap.xml

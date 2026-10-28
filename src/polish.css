@@ -1,0 +1,243 @@
+body:has(.catalogue, .booking-layout, .faq-list, .contact-layout, .content-page)
+  .navbar {
+  color: #fff;
+}
+::selection {
+  background: rgba(57, 139, 255, 0.45);
+  color: #fff;
+}
+.navbar .navlinks,
+.navbar .nav-actions,
+.navbar .language-switch {
+  color: #fff;
+}
+.brand {
+  width: 205px;
+  height: 74px;
+  overflow: visible;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 12px;
+  padding: 4px 9px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+}
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: normal;
+  filter: none;
+}
+.navbar.is-scrolled .brand {
+  height: 58px;
+  width: 172px;
+  border-radius: 9px;
+}
+.page-hero {
+  color: #fff;
+  min-height: 620px;
+  background-position: 70% center;
+  isolation: isolate;
+}
+.page-hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 10, 19, 0.94) 0%,
+    rgba(2, 10, 19, 0.72) 42%,
+    rgba(2, 10, 19, 0.12) 76%
+  );
+  z-index: 0;
+}
+.page-hero:after {
+  z-index: 0;
+}
+.page-hero-copy {
+  max-width: 760px;
+}
+.page-hero h1 {
+  font-size: clamp(48px, 5.9vw, 88px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  text-wrap: balance;
+  color: #fff;
+}
+.page-hero p {
+  max-width: 620px;
+  color: #d1dbe2;
+  font-size: 18px;
+}
+.experience-grid.all {
+  align-items: stretch;
+}
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-image {
+  display: block;
+  flex: none;
+}
+.card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.card-body p {
+  min-height: 0;
+}
+.card-footer {
+  margin-top: auto;
+}
+.cinematic-reel {
+  height: min(82vh, 860px);
+  min-height: 640px;
+  position: relative;
+  overflow: hidden;
+  background: #06111f;
+}
+.cinematic-reel video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(1.06);
+}
+.cinematic-reel:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3, 12, 23, 0.9) 0%,
+      rgba(3, 12, 23, 0.25) 55%,
+      rgba(3, 12, 23, 0.12)
+    ),
+    linear-gradient(0deg, rgba(3, 12, 23, 0.72), transparent 55%);
+}
+.reel-overlay {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  padding: 65px 7vw;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: end;
+  gap: 6vw;
+}
+.reel-overlay > div {
+  max-width: 720px;
+}
+.reel-overlay h2 {
+  font: 700 clamp(44px, 6vw, 86px)/0.96 "Manrope";
+  letter-spacing: -0.06em;
+  margin: 14px 0;
+}
+.reel-overlay h2 em {
+  color: var(--gold-light);
+}
+.reel-overlay p {
+  color: #c3d0d9;
+  line-height: 1.75;
+  max-width: 560px;
+}
+.reel-number,
+.reel-source {
+  font: 10px monospace;
+  letter-spacing: 0.16em;
+  writing-mode: vertical-rl;
+  color: #d6dee4;
+}
+.reel-source {
+  justify-self: end;
+}
+.button-glass {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  margin-top: 18px;
+}
+.hero {
+  background-position: 64% center;
+}
+.hero-copy {
+  max-width: 790px;
+}
+.hero h1 {
+  font-size: clamp(58px, 6.8vw, 108px);
+  text-wrap: balance;
+}
+.section-title h2 {
+  text-wrap: balance;
+}
+.transport-visual img,
+.story-image img,
+.destination-panels img,
+.home-guide-grid img,
+.card-image img {
+  object-position: center;
+}
+.destination-panels > a:nth-child(2) img {
+  object-position: 58% center;
+}
+.transport-visual img {
+  object-position: 55% center;
+}
+@media (max-width: 780px) {
+  .brand {
+    width: 145px;
+    height: 56px;
+    padding: 4px 7px;
+  }
+  .navbar.is-scrolled .brand {
+    width: 135px;
+    height: 51px;
+  }
+  .page-hero {
+    min-height: 540px;
+    background-position: 65% center;
+    padding-top: 135px;
+  }
+  .page-hero h1 {
+    font-size: clamp(43px, 14vw, 62px);
+  }
+  .page-hero p {
+    font-size: 15px;
+  }
+  .cinematic-reel {
+    height: 720px;
+    min-height: 0;
+  }
+  .reel-overlay {
+    padding: 55px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .reel-number,
+  .reel-source {
+    writing-mode: horizontal-tb;
+  }
+  .reel-source {
+    align-self: flex-end;
+  }
+  .reel-overlay h2 {
+    font-size: 47px;
+  }
+  .cinematic-reel video {
+    object-position: 58% center;
+  }
+  .hero {
+    background-position: 68% center !important;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+  .experience-card .card-image {
+    height: 260px;
+  }
+}
